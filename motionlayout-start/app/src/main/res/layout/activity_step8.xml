@@ -21,14 +21,19 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar_layout"
         android:layout_width="match_parent"
-        android:layout_height="180dp">
+        android:layout_height="180dp"
+        >
 
         <androidx.constraintlayout.motion.widget.MotionLayout
             android:id="@+id/motion_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layoutDescription="@xml/step8"
-            app:motionDebug="SHOW_PATH">
+            app:motionDebug="SHOW_PATH"
+            app:layout_scrollFlags="enterAlways|scroll|snap|exitUntilCollapsed"
+            android:minHeight="80dp"
+
+            >
 
             <ImageView
                 android:id="@+id/background"
