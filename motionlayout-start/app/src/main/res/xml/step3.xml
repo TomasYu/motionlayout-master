@@ -34,6 +34,8 @@
                 app:motionTarget="@id/moon"
                 app:keyPositionType="parentRelative"
                 app:percentY="0.5"
+                app:curveFit="spline"
+                app:percentWidth="0.5"
                 >
             </KeyPosition>
 
